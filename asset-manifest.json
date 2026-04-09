@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.53e21461.css",
+    "main.js": "/My-Portfolio/static/js/main.0418b886.js",
+    "static/js/453.e9e7ec89.chunk.js": "/My-Portfolio/static/js/453.e9e7ec89.chunk.js",
+    "static/media/profile.png": "/My-Portfolio/static/media/profile.0a7c0ad3ae2275ae9f11.png",
+    "static/media/pdf.worker.min.mjs": "/My-Portfolio/static/media/pdf.worker.min.61af2af7be8f09e8adb3.mjs",
+    "static/media/Infosys MongoDB Report.pdf": "/My-Portfolio/static/media/Infosys MongoDB Report.ae4e526ce49c9f474f94.pdf",
+    "static/media/Infosys HTML Development Report.pdf": "/My-Portfolio/static/media/Infosys HTML Development Report.171335a4a513551f1753.pdf",
+    "static/media/Narrendran Poorangavel.pdf": "/My-Portfolio/static/media/Narrendran Poorangavel.dcc499fa19a8f4cb724a.pdf",
+    "static/media/Infosys MongoDB.pdf": "/My-Portfolio/static/media/Infosys MongoDB.a1934921a541e7091873.pdf",
+    "static/media/Infosys HTML Development.pdf": "/My-Portfolio/static/media/Infosys HTML Development.5959ee3e1c15192ffb4e.pdf",
+    "static/media/Cisco Network Engineering.pdf": "/My-Portfolio/static/media/Cisco Network Engineering.7fe5df1fc46a6119d577.pdf",
+    "static/media/Infosys HTML5.pdf": "/My-Portfolio/static/media/Infosys HTML5.132c9112ede081b80485.pdf",
+    "static/media/Infosys Angular.pdf": "/My-Portfolio/static/media/Infosys Angular.8b3c55df990cc30f99dc.pdf",
+    "static/media/Infosys Node JS.pdf": "/My-Portfolio/static/media/Infosys Node JS.6bb3e3eb25780d738bb7.pdf",
+    "static/media/Infosys Exploring Computers.pdf": "/My-Portfolio/static/media/Infosys Exploring Computers.32080c64d3ae90123188.pdf",
+    "index.html": "/My-Portfolio/index.html",
+    "main.53e21461.css.map": "/My-Portfolio/static/css/main.53e21461.css.map",
+    "main.0418b886.js.map": "/My-Portfolio/static/js/main.0418b886.js.map",
+    "453.e9e7ec89.chunk.js.map": "/My-Portfolio/static/js/453.e9e7ec89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53e21461.css",
+    "static/js/main.0418b886.js"
+  ]
+}
