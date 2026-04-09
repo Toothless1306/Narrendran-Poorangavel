@@ -1,0 +1,10 @@
+#contact {
+  padding: 60px;
+}
+
+#contact a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+}
