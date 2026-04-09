@@ -11,7 +11,7 @@ import Journey from "./components/Journey/journey"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Narrendran-Poorangavel">
       <Navbar />
 
       <Routes>
