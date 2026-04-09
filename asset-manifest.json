@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Narrendran-Poorangavel/static/css/main.53e21461.css",
-    "main.js": "/Narrendran-Poorangavel/static/js/main.5db2f360.js",
+    "main.js": "/Narrendran-Poorangavel/static/js/main.1cba4bc1.js",
     "static/js/453.e9e7ec89.chunk.js": "/Narrendran-Poorangavel/static/js/453.e9e7ec89.chunk.js",
     "static/media/profile.png": "/Narrendran-Poorangavel/static/media/profile.0a7c0ad3ae2275ae9f11.png",
     "static/media/pdf.worker.min.mjs": "/Narrendran-Poorangavel/static/media/pdf.worker.min.61af2af7be8f09e8adb3.mjs",
@@ -17,11 +17,11 @@
     "static/media/Infosys Exploring Computers.pdf": "/Narrendran-Poorangavel/static/media/Infosys Exploring Computers.32080c64d3ae90123188.pdf",
     "index.html": "/Narrendran-Poorangavel/index.html",
     "main.53e21461.css.map": "/Narrendran-Poorangavel/static/css/main.53e21461.css.map",
-    "main.5db2f360.js.map": "/Narrendran-Poorangavel/static/js/main.5db2f360.js.map",
+    "main.1cba4bc1.js.map": "/Narrendran-Poorangavel/static/js/main.1cba4bc1.js.map",
     "453.e9e7ec89.chunk.js.map": "/Narrendran-Poorangavel/static/js/453.e9e7ec89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53e21461.css",
-    "static/js/main.5db2f360.js"
+    "static/js/main.1cba4bc1.js"
   ]
 }
