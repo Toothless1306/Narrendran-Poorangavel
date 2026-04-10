@@ -12,7 +12,7 @@ import Journey from "./components/Journey/journey"
 function App() {
   return (
     <BrowserRouter basename="/Narrendran-Poorangavel">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />

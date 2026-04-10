@@ -38,6 +38,7 @@ export interface CertificateItem {
   title: string
   pdfPath: string
   show: boolean
+  image?: string
 }
 
 export interface ExperienceItem {

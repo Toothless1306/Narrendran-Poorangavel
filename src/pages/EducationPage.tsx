@@ -2,7 +2,7 @@ import Education from "../components/Education/Education"
 
 const EducationPage = () => {
   return (
-    <main className="page-container">
+    <main>
       <Education />
     </main>
   )

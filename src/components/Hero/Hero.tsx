@@ -1,5 +1,5 @@
 import "./Hero.css";
-import profileImage from "../../assets/profile.png";
+import profileImage from "../../assets/professional-profile-2.png";
 import resume from "../../assets/Narrendran Poorangavel.pdf";
 import { useState } from "react";
 

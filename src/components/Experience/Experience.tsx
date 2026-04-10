@@ -7,7 +7,8 @@ const Experience = () => {
     )
 
     return (
-        <section id="experience" className="experience">
+        <>
+
             <h2 className="section-title">Experience</h2>
 
             <div className="experience__list">
@@ -25,7 +26,7 @@ const Experience = () => {
                     </div>
                 ))}
             </div>
-        </section>
+        </>
     )
 }
 

@@ -7,53 +7,75 @@ const Journey = () => {
     )
 
     return (
-        <section className="journey" id="journey">
+        <section>
             <h2 className="section-title">My Journey</h2>
 
             <div className="journey-path">
-                {visibleJourney.map((item, index) => (
-                    <div
-                        key={item.id}
-                        className={`journey-card ${index % 2 === 0 ? "left" : "right"
-                            }`}
-                    >
-                        <div className="journey-node"></div>
+                {visibleJourney.map((item, index) => {
+                    const isLeft = index % 2 === 0
 
-                        <div className="journey-content">
-                            <img src={item.image} alt={item.title} />
+                    return (
+                        <div
+                            key={item.id}
+                            className={`journey-row ${isLeft ? "left" : "right"
+                                }`}
+                        >
+                            {/* Detail Card */}
+                            <div className="journey-card">
+                                <div className="journey-node"></div>
 
-                            {/* <span className="journey-type">
-                                {item.type}
-                            </span> */}
+                                <div className="journey-content">
+                                    <h3>{item.title}</h3>
+                                    <h4>{item.subtitle}</h4>
 
-                            <h3>{item.title}</h3>
-                            <h4>{item.subtitle}</h4>
+                                    <p>{item.timeline}</p>
+                                    <p>{item.location}</p>
 
-                            <p>{item.timeline}</p>
-                            <p>{item.location}</p>
+                                    {item?.score && (
+                                        <p>{item.score}</p>
+                                    )}
 
-                            {item?.score && <p>{item.score}</p>}
+                                    {item?.highlights && (
+                                        <ul>
+                                            {item.highlights.map(
+                                                (
+                                                    point,
+                                                    index
+                                                ) => (
+                                                    <li
+                                                        key={
+                                                            index
+                                                        }
+                                                    >
+                                                        {point}
+                                                    </li>
+                                                )
+                                            )}
+                                        </ul>
+                                    )}
 
-                            {item?.highlights && (
-                                <ul>
-                                    {item.highlights.map((point, index) => (
-                                        <li key={index}>{point}</li>
-                                    ))}
-                                </ul>
-                            )}
+                                    {item.website && (
+                                        <a
+                                            href={item.website}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            Visit Website
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
 
-                            {item.website && (
-                                <a
-                                    href={item.website}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Visit Website
-                                </a>
-                            )}
+                            {/* Side Image */}
+                            <div className="journey-image">
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                />
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    )
+                })}
             </div>
         </section>
     )

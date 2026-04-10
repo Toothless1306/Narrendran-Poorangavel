@@ -1,5 +1,8 @@
-import { BaseJourneyItem, EducationJourneyItem, ExperienceJourneyItem } from "../../types/portfolio.types";
-
+import { BaseJourneyItem } from "../../types/portfolio.types";
+import college from "../../assets/kit.png";
+import school from "../../assets/school.jpg";
+import etp from "../../assets/ETP.jpg";
+import gwayerp from "../../assets/Gwayerp.jpg";
 export const journey: Record<string, BaseJourneyItem> = {
     gwayerp: {
         id: 5,
@@ -8,7 +11,7 @@ export const journey: Record<string, BaseJourneyItem> = {
         subtitle: "GWAYERP Tech Solutions",
         timeline: "Dec 2024 - Oct 2025",
         location: "Chennai, India",
-        image: "/assets/gwayerp.png",
+        image: gwayerp,
         website: "https://gwayerp.com",
         highlights: [
             "Developed scalable ERP modules",
@@ -24,7 +27,7 @@ export const journey: Record<string, BaseJourneyItem> = {
         subtitle: "Elite Tech Park",
         timeline: "Mar 2024 - Jul 2024",
         location: "Coimbatore, India",
-        image: "/assets/elite-tech.png",
+        image: etp,
         website: "https://www.elitetechcorp.com/",
         highlights: [
             "CRM automation",
@@ -40,7 +43,7 @@ export const journey: Record<string, BaseJourneyItem> = {
         subtitle: "Karpagam Institute of Technology",
         timeline: "2020 - 2024",
         location: "Coimbatore, India",
-        image: "/assets/kit.png",
+        image: college,
         website: "https://karpagamtech.ac.in/",
         score: "CGPA: 7.49 / 10",
         show: true
@@ -53,7 +56,7 @@ export const journey: Record<string, BaseJourneyItem> = {
         subtitle: "H.N.U.P.R Matric Higher Secondary School",
         timeline: "2018 - 2020",
         location: "Coimbatore, India",
-        image: "/assets/school.png",
+        image: college,
         website: "",
         score: "76.67%",
         show: true
@@ -66,7 +69,7 @@ export const journey: Record<string, BaseJourneyItem> = {
         subtitle: "H.N.U.P.R Matric Higher Secondary School",
         timeline: "2017 - 2018",
         location: "Coimbatore, India",
-        image: "/assets/school.png",
+        image: school,
         website: "",
         score: "84.2%",
         show: true

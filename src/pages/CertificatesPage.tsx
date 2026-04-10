@@ -2,7 +2,7 @@ import Certificates from "../components/Certificates/Certificates"
 
 const CertificatesPage = () => {
   return (
-    <main className="page-container">
+    <main>
       <Certificates />
     </main>
   )

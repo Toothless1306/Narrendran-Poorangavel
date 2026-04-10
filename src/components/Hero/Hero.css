@@ -293,13 +293,6 @@
   }
 }
 
-.hero__status {
-  margin-top: 20px;
-  padding: 16px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  line-height: 1.8;
-}
 
 .hero__container {
   display: flex;
@@ -328,10 +321,10 @@
 
 /* Hero status section (Skills, Languages, Current Study) */
 .hero__status {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 16px 24px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  /* border-radius: 12px; */
+  background: linear-gradient(135deg, #0a0f1c 0%, #0e1a2a 100%);
   line-height: 1.6;
   text-align: left;
   border: 1px solid rgba(136, 170, 255, 0.2);
