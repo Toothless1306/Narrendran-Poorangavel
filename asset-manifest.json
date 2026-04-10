@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Narrendran-Poorangavel/static/css/main.53e21461.css",
-    "main.js": "/Narrendran-Poorangavel/static/js/main.1cba4bc1.js",
+    "main.css": "/Narrendran-Poorangavel/static/css/main.f93d1b5b.css",
+    "main.js": "/Narrendran-Poorangavel/static/js/main.db933cac.js",
     "static/js/453.e9e7ec89.chunk.js": "/Narrendran-Poorangavel/static/js/453.e9e7ec89.chunk.js",
-    "static/media/profile.png": "/Narrendran-Poorangavel/static/media/profile.0a7c0ad3ae2275ae9f11.png",
+    "static/media/professional-profile-2.png": "/Narrendran-Poorangavel/static/media/professional-profile-2.8111fc5a8f6420731a92.png",
     "static/media/pdf.worker.min.mjs": "/Narrendran-Poorangavel/static/media/pdf.worker.min.61af2af7be8f09e8adb3.mjs",
     "static/media/Infosys MongoDB Report.pdf": "/Narrendran-Poorangavel/static/media/Infosys MongoDB Report.ae4e526ce49c9f474f94.pdf",
     "static/media/Infosys HTML Development Report.pdf": "/Narrendran-Poorangavel/static/media/Infosys HTML Development Report.171335a4a513551f1753.pdf",
@@ -15,13 +15,16 @@
     "static/media/Infosys Angular.pdf": "/Narrendran-Poorangavel/static/media/Infosys Angular.8b3c55df990cc30f99dc.pdf",
     "static/media/Infosys Node JS.pdf": "/Narrendran-Poorangavel/static/media/Infosys Node JS.6bb3e3eb25780d738bb7.pdf",
     "static/media/Infosys Exploring Computers.pdf": "/Narrendran-Poorangavel/static/media/Infosys Exploring Computers.32080c64d3ae90123188.pdf",
+    "static/media/cisco.jpg": "/Narrendran-Poorangavel/static/media/cisco.5d94e027fa59621b8e44.jpg",
+    "static/media/kit.png": "/Narrendran-Poorangavel/static/media/kit.170001ce4fe3ffce2b73.png",
+    "static/media/ETP.jpg": "/Narrendran-Poorangavel/static/media/ETP.262cf52bc0035d613350.jpg",
     "index.html": "/Narrendran-Poorangavel/index.html",
-    "main.53e21461.css.map": "/Narrendran-Poorangavel/static/css/main.53e21461.css.map",
-    "main.1cba4bc1.js.map": "/Narrendran-Poorangavel/static/js/main.1cba4bc1.js.map",
+    "main.f93d1b5b.css.map": "/Narrendran-Poorangavel/static/css/main.f93d1b5b.css.map",
+    "main.db933cac.js.map": "/Narrendran-Poorangavel/static/js/main.db933cac.js.map",
     "453.e9e7ec89.chunk.js.map": "/Narrendran-Poorangavel/static/js/453.e9e7ec89.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53e21461.css",
-    "static/js/main.1cba4bc1.js"
+    "static/css/main.f93d1b5b.css",
+    "static/js/main.db933cac.js"
   ]
 }
