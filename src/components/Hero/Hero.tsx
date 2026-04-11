@@ -1,17 +1,55 @@
 import "./Hero.css";
 import profileImage from "../../assets/professional-profile-2.png";
 import resume from "../../assets/Narrendran Poorangavel.pdf";
-import { useState } from "react";
+import { useState, useEffect, ReactNode } from "react";
+
+// Type for accordion items
+interface AccordionItem {
+  title: string;
+  content: ReactNode;
+}
 
 const Hero = () => {
-
   const [openSection, setOpenSection] = useState<string | null>(null);
+  const [typedSubtitle, setTypedSubtitle] = useState<string>("");
+  const fullSubtitle: string = "Associate Full Stack Developer";
+
+  // Typewriter effect
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setTypedSubtitle(fullSubtitle.slice(0, index + 1));
+      index++;
+      if (index === fullSubtitle.length) clearInterval(interval);
+    }, 80);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Scroll reveal using Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const elements = document.querySelectorAll(".scroll-reveal");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   const toggleSection = (section: string) => {
     setOpenSection(openSection === section ? null : section);
   };
 
-  const accordionData = [
+  const accordionData: AccordionItem[] = [
     {
       title: "Skills",
       content: (
@@ -63,26 +101,21 @@ const Hero = () => {
         </ul>
       ),
     },
-    // {
-    //   title: "Current Study",
-    //   content: (
-    //     <ul>
-    //       <li>Currently studying Machine Learning for Data Analytics</li>
-    //     </ul>
-    //   ),
-    // },
   ];
+
   return (
     <section className="hero">
       <div className="hero__container">
-        {/* Profile Image */}
-        <div className="hero__image">
+        {/* Profile Image & Contact Section */}
+        <div className="hero__image scroll-reveal">
           <img src={profileImage} alt="Narrendran Poorangavel" />
 
-          {/* Contact Details */}
           <h3 className="hero__contact-title">Contact Details</h3>
           <div className="hero__contact">
-            <a href="mailto:narrendranpoorangavel@gmail.com" className="hero__contact-link">
+            <a
+              href="mailto:narrendranpoorangavel@gmail.com"
+              className="hero__contact-link"
+            >
               Email
             </a>
             <a href="tel:+917868843874" className="hero__contact-link">
@@ -96,7 +129,6 @@ const Hero = () => {
             >
               GitHub
             </a>
-
             <a
               href="https://www.linkedin.com/in/narrendran-p-0400b621a"
               target="_blank"
@@ -107,11 +139,6 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Social Links */}
-          <div className="hero__socials">
-          </div>
-
-          {/* Actions */}
           <div className="hero__actions">
             <a className="hero__button" href="/projects">
               View Projects
@@ -126,23 +153,34 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Content */}
+        {/* Main Content */}
         <div className="hero__content">
           <h1 className="hero__title">Hi, I'm Narrendran Poorangavel</h1>
-          <h2 className="hero__subtitle">Associate Full Stack Developer</h2>
+          <h2 className="hero__subtitle">{typedSubtitle}</h2>
 
           <p className="hero__description">
-            I am a passionate full-stack developer specializing in building high-performance, scalable, and maintainable web applications, primarily using the MERN stack. I focus on writing clean, efficient, and scalable code that delivers real business value and smooth user experiences.
-
-            With strong skills in problem-solving, logical thinking, and teamwork, I enjoy turning complex requirements into reliable solutions. I am also eager to explore new technologies and frameworks, continuously expanding my technical expertise to stay aligned with modern development practices.
-
-            Currently, I am open to work opportunities and ready to commute or relocate based on project and organizational needs. I am excited to contribute to impactful projects, collaborate with dynamic teams, and grow as a developer in challenging environments.
+            I am a passionate full-stack developer specializing in building
+            high-performance, scalable, and maintainable web applications,
+            primarily using the MERN stack. I focus on writing clean,
+            efficient, and scalable code that delivers real business value and
+            smooth user experiences. With strong skills in problem-solving,
+            logical thinking, and teamwork, I enjoy turning complex
+            requirements into reliable solutions. I am also eager to explore
+            new technologies and frameworks, continuously expanding my
+            technical expertise to stay aligned with modern development
+            practices. Currently, I am open to work opportunities and ready to
+            commute or relocate based on project and organizational needs. I am
+            excited to contribute to impactful projects, collaborate with
+            dynamic teams, and grow as a developer in challenging environments.
           </p>
 
-
           <div className="hero__status">
-            {accordionData.map((item) => (
-              <div key={item.title} className="accordion-item">
+            {accordionData.map((item, idx) => (
+              <div
+                key={item.title}
+                className="accordion-item scroll-reveal"
+                style={{ transitionDelay: `${idx * 0.1}s` }}
+              >
                 <button
                   className={`accordion-header ${openSection === item.title ? "active" : ""
                     }`}
@@ -157,12 +195,11 @@ const Hero = () => {
                   className={`accordion-content ${openSection === item.title ? "open" : ""
                     }`}
                 >
-                  <p>{item.content}</p>
+                  <div>{item.content}</div>
                 </div>
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>
