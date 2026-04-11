@@ -1,44 +1,24 @@
-/* .App {
-  text-align: center;
-}
+/* App.css - Global app container styles */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #0a0f1c;
+  scroll-behavior: smooth;
 }
 
-.App-link {
-  color: #61dafb;
+/* Optional: smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+/* Ensure all sections have consistent width */
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
 
-.section-title {
-  font-size: 36px;
-  margin-bottom: 32px;
-  font-weight: 700;
+/* Remove default focus outline for better custom styling */
+:focus-visible {
+  outline: 2px solid #88aaff;
+  outline-offset: 2px;
 }

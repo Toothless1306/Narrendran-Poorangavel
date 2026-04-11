@@ -4,6 +4,9 @@
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #0a0f1c 0%, #0e1a2a 100%);
   color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #projects h2 {
@@ -21,7 +24,6 @@
   width: 100%;
 }
 
-/* Optional underline effect for the heading */
 #projects h2::after {
   content: '';
   display: block;
@@ -33,13 +35,6 @@
 }
 
 /* Grid container for projects */
-#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Wrap all project cards in a grid */
 #projects>div:not(h2) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -67,7 +62,6 @@
   background: rgba(25, 35, 55, 0.8);
 }
 
-/* Project title */
 #projects h3 {
   font-size: 1.6rem;
   font-weight: 600;
@@ -79,7 +73,6 @@
   color: transparent;
 }
 
-/* Project description */
 #projects p:first-of-type {
   font-size: 1rem;
   line-height: 1.5;
@@ -87,12 +80,9 @@
   color: #cbd5e6;
 }
 
-/* Tech stack styling */
-/* #projects p:last-of-type { */
 #projects .tech-stack {
   font-size: 0.85rem;
-  font-family: 'Courier New',
-    monospace;
+  font-family: 'Courier New', monospace;
   background: rgba(0, 0, 0, 0.3);
   display: inline-block;
   padding: 0.3rem 0.8rem;
@@ -102,7 +92,7 @@
   margin-top: 0.5rem;
 }
 
-
+/* Legacy table styles (if used) */
 .projects-header,
 .project-row {
   display: grid;
@@ -122,17 +112,7 @@
   border-bottom: 1px solid #eee;
 }
 
-.project-row:nth-child(odd) {
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.project-row:nth-child(even) {
-  background: rgba(255, 255, 255, 0.08);
-}
-
-/* Optional: add a subtle separator between cards (already handled by gap) */
-
-/* Responsive adjustments */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   #projects {
     padding: 2rem 1rem;
@@ -150,6 +130,13 @@
   #projects h3 {
     font-size: 1.4rem;
   }
+
+  .projects-header,
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -159,5 +146,13 @@
 
   #projects>div:not(h2)>div {
     padding: 1rem;
+  }
+
+  #projects h3 {
+    font-size: 1.2rem;
+  }
+
+  #projects p:first-of-type {
+    font-size: 0.9rem;
   }
 }

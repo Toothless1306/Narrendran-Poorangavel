@@ -1,3 +1,5 @@
+/* Journey.css - Timeline with responsive stacking */
+
 .journey {
     padding: 5rem 2rem;
     background: radial-gradient(circle at top, #10192d, #0a0f1c);
@@ -109,12 +111,6 @@
     font-weight: 600;
 }
 
-.journey-image img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
 .journey-image {
     width: 42%;
     display: flex;
@@ -130,4 +126,70 @@
     object-fit: contain;
     border-radius: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Responsive: Stack & hide central line ===== */
+@media (max-width: 768px) {
+    .journey {
+        padding: 3rem 1rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .journey-path::before {
+        display: none;
+    }
+
+    .journey-row {
+        flex-direction: column !important;
+        margin-bottom: 2.5rem;
+        gap: 1.5rem;
+    }
+
+    .journey-card,
+    .journey-image {
+        width: 100%;
+    }
+
+    .journey-node {
+        display: none;
+    }
+
+    .journey-content {
+        text-align: center;
+    }
+
+    .journey-image {
+        order: -1;
+        /* show image above card on mobile (optional) */
+    }
+
+    .journey-image img {
+        max-height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .journey {
+        padding: 2rem 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .journey-content {
+        padding: 1rem;
+    }
+
+    .journey-content h3 {
+        font-size: 1rem;
+    }
+
+    .journey-content h4 {
+        font-size: 0.9rem;
+    }
 }

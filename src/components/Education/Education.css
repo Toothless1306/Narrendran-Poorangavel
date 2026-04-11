@@ -4,6 +4,9 @@
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #0a0f1c 0%, #0e1a2a 100%);
   color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #education h2 {
@@ -29,15 +32,8 @@
   border-radius: 2px;
 }
 
-/* Grid container for education items */
-#education {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Wrap all cards in a grid */
-#education > div:not(h2) {
+/* Grid container */
+#education>div:not(h2) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
@@ -46,8 +42,8 @@
   margin-top: 1rem;
 }
 
-/* Individual education card */
-#education > div:not(h2) > div {
+/* Individual card */
+#education>div:not(h2)>div {
   background: rgba(20, 30, 45, 0.6);
   backdrop-filter: blur(8px);
   border-radius: 1.5rem;
@@ -59,14 +55,13 @@
   flex-direction: column;
 }
 
-#education > div:not(h2) > div:hover {
+#education>div:not(h2)>div:hover {
   transform: translateY(-8px);
   border-color: rgba(136, 170, 255, 0.6);
   background: rgba(25, 35, 55, 0.8);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Institution name */
 #education h3 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -78,7 +73,6 @@
   color: transparent;
 }
 
-/* Degree */
 #education p:first-of-type {
   font-size: 1.1rem;
   font-weight: 500;
@@ -86,7 +80,6 @@
   margin-bottom: 0.5rem;
 }
 
-/* Year */
 #education p:nth-of-type(2) {
   font-size: 0.9rem;
   color: #9aaec5;
@@ -98,7 +91,6 @@
   align-self: flex-start;
 }
 
-/* Score / GPA */
 #education p:nth-of-type(3) {
   font-size: 0.95rem;
   font-weight: 500;
@@ -108,7 +100,7 @@
   border-top: 1px dashed rgba(136, 170, 255, 0.3);
 }
 
-/* Responsive */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   #education {
     padding: 2rem 1rem;
@@ -118,7 +110,7 @@
     font-size: 2rem;
   }
 
-  #education > div:not(h2) {
+  #education>div:not(h2) {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
@@ -137,11 +129,16 @@
     font-size: 1.8rem;
   }
 
-  #education > div:not(h2) > div {
+  #education>div:not(h2)>div {
     padding: 1rem;
   }
 
   #education h3 {
     font-size: 1.2rem;
+  }
+
+  #education p:nth-of-type(2),
+  #education p:nth-of-type(3) {
+    font-size: 0.85rem;
   }
 }

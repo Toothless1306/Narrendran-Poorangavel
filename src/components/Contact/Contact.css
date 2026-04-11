@@ -1,10 +1,135 @@
+/* Contact.css - Clean contact section with responsive layout */
+
 #contact {
-  padding: 60px;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0a0f1c 0%, #0e1a2a 100%);
+  color: #e0e0e0;
+  text-align: center;
 }
 
-#contact a {
+.contact__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #88aaff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+  position: relative;
   display: inline-block;
-  margin-top: 10px;
-  margin-right: 20px;
+}
+
+.contact__title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #88aaff, #ff88aa);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact__info {
+  background: rgba(20, 30, 45, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid rgba(136, 170, 255, 0.2);
+}
+
+.contact__info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #88aaff;
+}
+
+.contact__detail {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.contact__detail a {
+  color: #aaccff;
   text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact__detail a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contact__social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact__social a {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(136, 170, 255, 0.3);
+}
+
+.contact__social a:hover {
+  background: #88aaff;
+  color: #0a0f1c;
+  transform: translateY(-3px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  #contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact__title {
+    font-size: 2rem;
+  }
+
+  .contact__info {
+    padding: 1.5rem;
+  }
+
+  .contact__info h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__title {
+    font-size: 1.8rem;
+  }
+
+  .contact__detail {
+    font-size: 0.9rem;
+  }
+
+  .contact__social a {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
 }
