@@ -39,17 +39,18 @@ export const certificates: Record<string, CertificateItem> = {
     image: infosys,
     show: true
   },
-  htmlReport: {
-    id: 4,
-    title: "Infosys HTML Development Report",
-    pdfPath: htmlReportPdf,
-    image: htmldevelopment,
-    show: true
-  },
   htmlDevelopment: {
     id: 5,
     title: "Infosys HTML Development",
     pdfPath: htmlDevPdf,
+    image: htmldevelopment,
+    show: true
+  },
+
+  htmlReport: {
+    id: 4,
+    title: "Infosys HTML Development Report",
+    pdfPath: htmlReportPdf,
     image: htmldevelopment,
     show: true
   },

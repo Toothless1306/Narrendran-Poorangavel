@@ -1,5 +1,4 @@
-/* Certificates.css - Modern certificate gallery with image cards */
-
+/* Certificates.css */
 #certificates {
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #0a0f1c 0%, #0e1a2a 100%);
@@ -20,7 +19,7 @@
 }
 
 #certificates h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 80px;
   height: 3px;
@@ -29,25 +28,16 @@
   border-radius: 2px;
 }
 
-/* Grid container for certificates */
-#certificates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Wrap all cards in a grid */
-#certificates>div:not(h2) {
+.certificates__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   width: 100%;
-  /* max-width: 1200px; */
-  margin-top: 1rem;
+  max-width: 1200px;
+  margin: 1rem auto 0;
 }
 
-/* Individual certificate card */
-#certificates>div:not(h2)>div {
+.certificate-card {
   background: rgba(20, 30, 45, 0.6);
   backdrop-filter: blur(8px);
   border-radius: 1.5rem;
@@ -59,111 +49,75 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
-#certificates>div:not(h2)>div:hover {
+.certificate-card:hover {
   transform: translateY(-8px);
   border-color: rgba(136, 170, 255, 0.6);
   background: rgba(25, 35, 55, 0.8);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Certificate title */
-#certificates h3 {
+.certificate-card__title {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #ffffff;
   background: linear-gradient(120deg, #fff, #bbddff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-/* Certificate image */
-#certificates img {
+.certificate-card__thumbnail {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  max-height: 100px;
+}
+
+.certificate-card__thumbnail img,
+.certificate-card__thumbnail .react-pdf__Document {
   max-width: 250px;
-  height: auto;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
   border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(136, 170, 255, 0.3);
 }
 
-#certificates img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(136, 170, 255, 0.3);
-  border-color: rgba(136, 170, 255, 0.8);
-}
-
-/* Optional: add a subtle "View Certificate" overlay on hover? 
-   Not included to keep it simple, but you could add it later. */
-
-/* Responsive design */
-@media (max-width: 768px) {
-  #certificates {
-    padding: 2rem 1rem;
-  }
-
-  #certificates h2 {
-    font-size: 2rem;
-  }
-
-  #certificates>div:not(h2) {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.5rem;
-  }
-
-  #certificates h3 {
-    font-size: 1.1rem;
-  }
-
-  #certificates img {
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  #certificates h2 {
-    font-size: 1.8rem;
-  }
-
-  #certificates>div:not(h2)>div {
-    padding: 1rem;
-  }
-
-  #certificates h3 {
-    font-size: 1rem;
-  }
-}
-
+/* Modal */
 .certificate-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  grid-template-columns: none !important;
-  /* display: flex; */
-  /* justify-content: center; */
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 9999;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
 }
 
 .certificate-modal__content {
-  width: 80%;
-  height: 80%;
-  background: #f5f5f5;
-  border-radius: 12px;
   position: relative;
-  padding: 20px;
-  justify-self: center;
-  overflow: hidden;
+  background: #1e2a3a;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow: auto;
+  padding: 1rem;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
 }
 
 .certificate-modal__close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+  position: sticky;
+  top: 0;
+  float: right;
   width: 40px;
   height: 40px;
   font-size: 28px;
@@ -173,16 +127,145 @@
   cursor: pointer;
   z-index: 10000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
 }
 
 .certificate-modal__close:hover {
   transform: scale(1.05);
 }
 
-.certificate-modal__viewer {
+/* PDF viewer */
+.pdf-viewer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding-top: 20px;
+  gap: 1.5rem;
+  clear: both;
+}
+
+.pdf-loading {
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.pdf-error {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid #ff8888;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: #ffcccc;
+}
+
+.pdf-error button {
+  background: #ffaa88;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pdf-controls {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 40px;
+  margin-top: 0.5rem;
+}
+
+.pdf-controls button {
+  padding: 0.5rem 1rem;
+  background: #2c3e66;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.pdf-controls button:hover:not(:disabled) {
+  background: #1e2f4b;
+}
+
+.pdf-controls button:disabled {
+  background: #555;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pdf-controls span {
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Fallback viewer (native browser) */
+.fallback-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+  color: #ddd;
+}
+
+.fallback-link {
+  display: inline-block;
+  background: #2c3e66;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.fallback-link:hover {
+  background: #1e2f4b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #certificates {
+    padding: 2rem 1rem;
+  }
+
+  #certificates h2 {
+    font-size: 2rem;
+  }
+
+  .certificates__grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .certificate-card__title {
+    font-size: 1.1rem;
+  }
+
+  .certificate-modal__content {
+    width: 95%;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #certificates h2 {
+    font-size: 1.8rem;
+  }
+
+  .certificate-card {
+    padding: 1rem;
+  }
+
+  .certificate-card__title {
+    font-size: 1rem;
+  }
 }
