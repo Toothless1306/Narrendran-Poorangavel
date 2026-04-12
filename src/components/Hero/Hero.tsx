@@ -130,7 +130,7 @@ const Hero = () => {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/narrendran-p-0400b621a"
+              href="https://www.linkedin.com/in/narrendranpoorangavel/"
               target="_blank"
               rel="noreferrer"
               className="hero__contact-link"
@@ -140,9 +140,9 @@ const Hero = () => {
           </div>
 
           <div className="hero__actions">
-            <a className="hero__button" href="/projects">
+            {/* <a className="hero__button" href="/projects">
               View Projects
-            </a>
+            </a> */}
             <a
               className="hero__button hero__button--secondary"
               href={resume}

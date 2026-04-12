@@ -17,7 +17,7 @@ const Contact = () => {
       <br />
 
       <a
-        href="https://www.linkedin.com/in/narrendran-p-0400b621a"
+        href="linkedin.com/in/narrendran-p-0400b621a"
         target="_blank"
       >
         LinkedIn
