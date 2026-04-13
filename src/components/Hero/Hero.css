@@ -426,3 +426,25 @@
     font-size: 0.85rem;
   }
 }
+
+.tree-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tree-list>li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.tree-list ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+.tree-list ul li {
+  font-weight: 400;
+  margin: 4px 0;
+}

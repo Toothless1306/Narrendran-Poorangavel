@@ -53,14 +53,15 @@ const Hero = () => {
     {
       title: "Skills",
       content: (
-        <ul className="tree">
+        <ul className="tree-list">
           <li>
             Frontend
             <ul>
               <li>ReactJS</li>
-              <li>HTML5/CSS3</li>
+              <li>HTML5 / CSS3</li>
             </ul>
           </li>
+
           <li>
             Backend
             <ul>
@@ -69,6 +70,7 @@ const Hero = () => {
               <li>Python</li>
             </ul>
           </li>
+
           <li>
             Database
             <ul>
