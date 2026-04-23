@@ -56,7 +56,7 @@ export const journey: Record<string, BaseJourneyItem> = {
         subtitle: "H.N.U.P.R Matric Higher Secondary School",
         timeline: "2018 - 2020",
         location: "Coimbatore, India",
-        image: college,
+        image: school,
         website: "",
         score: "76.67%",
         show: true
