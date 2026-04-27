@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/Narrendran-Poorangavel/static/css/main.7ec81dd3.css",
-    "main.js": "/Narrendran-Poorangavel/static/js/main.6b01172d.js",
+    "main.js": "/Narrendran-Poorangavel/static/js/main.28cf735b.js",
     "static/js/453.e9e7ec89.chunk.js": "/Narrendran-Poorangavel/static/js/453.e9e7ec89.chunk.js",
     "static/media/professional-profile-2.png": "/Narrendran-Poorangavel/static/media/professional-profile-2.8111fc5a8f6420731a92.png",
     "static/media/Infosys MongoDB Report.pdf": "/Narrendran-Poorangavel/static/media/Infosys MongoDB Report.ae4e526ce49c9f474f94.pdf",
-    "static/media/Narrendran Poorangavel.pdf": "/Narrendran-Poorangavel/static/media/Narrendran Poorangavel.d41a62a91f0fe5d83b59.pdf",
+    "static/media/Narrendran Poorangavel.pdf": "/Narrendran-Poorangavel/static/media/Narrendran Poorangavel.c22e39c6d9db84e71bcd.pdf",
     "static/media/Infosys HTML Development Report.pdf": "/Narrendran-Poorangavel/static/media/Infosys HTML Development Report.171335a4a513551f1753.pdf",
     "static/media/Infosys MongoDB.pdf": "/Narrendran-Poorangavel/static/media/Infosys MongoDB.a1934921a541e7091873.pdf",
     "static/media/Infosys HTML Development.pdf": "/Narrendran-Poorangavel/static/media/Infosys HTML Development.5959ee3e1c15192ffb4e.pdf",
@@ -19,11 +19,11 @@
     "static/media/ETP.jpg": "/Narrendran-Poorangavel/static/media/ETP.262cf52bc0035d613350.jpg",
     "index.html": "/Narrendran-Poorangavel/index.html",
     "main.7ec81dd3.css.map": "/Narrendran-Poorangavel/static/css/main.7ec81dd3.css.map",
-    "main.6b01172d.js.map": "/Narrendran-Poorangavel/static/js/main.6b01172d.js.map",
+    "main.28cf735b.js.map": "/Narrendran-Poorangavel/static/js/main.28cf735b.js.map",
     "453.e9e7ec89.chunk.js.map": "/Narrendran-Poorangavel/static/js/453.e9e7ec89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ec81dd3.css",
-    "static/js/main.6b01172d.js"
+    "static/js/main.28cf735b.js"
   ]
 }
