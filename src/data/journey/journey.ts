@@ -65,7 +65,7 @@ export const journey: Record<string, BaseJourneyItem> = {
     sslc: {
         id: 1,
         type: "education",
-        title: "Secondary School Leaving Certificate (SSLC)",
+        title: "Higher Secondary School Leaving Certificate (SSLC)",
         subtitle: "H.N.U.P.R Matric Higher Secondary School",
         timeline: "2017 - 2018",
         location: "Coimbatore, India",

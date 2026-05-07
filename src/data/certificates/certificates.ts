@@ -16,6 +16,8 @@ import html5 from "../../assets/certificates/html5.jpg"
 import angular from "../../assets/certificates/angular.png"
 import mongodb from "../../assets/certificates/mongodb.png"
 import htmldevelopment from "../../assets/certificates/html development.jpg"
+import fitaCertificate from "../../assets/certificates/Certificate_36503.pdf"
+import pythonwithML from "../../assets/certificates/python-with-ml.png"
 
 export const certificates: Record<string, CertificateItem> = {
   cisco: {
@@ -81,5 +83,12 @@ export const certificates: Record<string, CertificateItem> = {
     pdfPath: nodePdf,
     image: nodejs,
     show: true
-  }
+  },
+  dataAnalysis: {
+    id: 8,
+    title: "Fita Data Analysis",
+    pdfPath: fitaCertificate,
+    image: pythonwithML,
+    show: true
+  },
 }
