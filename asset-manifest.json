@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/Narrendran-Poorangavel/static/css/main.7ec81dd3.css",
-    "main.js": "/Narrendran-Poorangavel/static/js/main.0a042bd9.js",
+    "main.js": "/Narrendran-Poorangavel/static/js/main.b44f3892.js",
     "static/js/453.e9e7ec89.chunk.js": "/Narrendran-Poorangavel/static/js/453.e9e7ec89.chunk.js",
     "static/media/professional-profile-2.png": "/Narrendran-Poorangavel/static/media/professional-profile-2.8111fc5a8f6420731a92.png",
     "static/media/Infosys MongoDB Report.pdf": "/Narrendran-Poorangavel/static/media/Infosys MongoDB Report.ae4e526ce49c9f474f94.pdf",
-    "static/media/Narrendran Poorangavel.pdf": "/Narrendran-Poorangavel/static/media/Narrendran Poorangavel.c22e39c6d9db84e71bcd.pdf",
     "static/media/Infosys HTML Development Report.pdf": "/Narrendran-Poorangavel/static/media/Infosys HTML Development Report.171335a4a513551f1753.pdf",
     "static/media/Infosys MongoDB.pdf": "/Narrendran-Poorangavel/static/media/Infosys MongoDB.a1934921a541e7091873.pdf",
     "static/media/Infosys HTML Development.pdf": "/Narrendran-Poorangavel/static/media/Infosys HTML Development.5959ee3e1c15192ffb4e.pdf",
@@ -15,16 +14,17 @@
     "static/media/Infosys Node JS.pdf": "/Narrendran-Poorangavel/static/media/Infosys Node JS.6bb3e3eb25780d738bb7.pdf",
     "static/media/Infosys Exploring Computers.pdf": "/Narrendran-Poorangavel/static/media/Infosys Exploring Computers.32080c64d3ae90123188.pdf",
     "static/media/Certificate_36503.pdf": "/Narrendran-Poorangavel/static/media/Certificate_36503.00d973c3094002c1ae2d.pdf",
+    "static/media/Narrendran Poorangavel.pdf": "/Narrendran-Poorangavel/static/media/Narrendran Poorangavel.0ecc506b71bef660cdab.pdf",
     "static/media/cisco.jpg": "/Narrendran-Poorangavel/static/media/cisco.5d94e027fa59621b8e44.jpg",
     "static/media/kit.png": "/Narrendran-Poorangavel/static/media/kit.170001ce4fe3ffce2b73.png",
     "static/media/ETP.jpg": "/Narrendran-Poorangavel/static/media/ETP.262cf52bc0035d613350.jpg",
     "index.html": "/Narrendran-Poorangavel/index.html",
     "main.7ec81dd3.css.map": "/Narrendran-Poorangavel/static/css/main.7ec81dd3.css.map",
-    "main.0a042bd9.js.map": "/Narrendran-Poorangavel/static/js/main.0a042bd9.js.map",
+    "main.b44f3892.js.map": "/Narrendran-Poorangavel/static/js/main.b44f3892.js.map",
     "453.e9e7ec89.chunk.js.map": "/Narrendran-Poorangavel/static/js/453.e9e7ec89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ec81dd3.css",
-    "static/js/main.0a042bd9.js"
+    "static/js/main.b44f3892.js"
   ]
 }
